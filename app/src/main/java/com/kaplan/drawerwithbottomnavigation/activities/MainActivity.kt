@@ -64,29 +64,23 @@ class MainActivity : AppCompatActivity() {
             //displaySelectedScreen()
             when ((menu as MenuBaseItem).id) {
                 MenuProvider.MENU_HOME -> {
-
-                    navController.popBackStack()
                     navController.navigate(R.id.homeFragment)
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                 }
                 MenuProvider.MENU_FASHION, MenuProvider.MENU_SPORTS, MenuProvider.MENU_ELECTRONICS -> {
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
-                    navController.popBackStack()
                     navController.navigate(R.id.categoryFragment)
                 }
                 MenuProvider.MENU_FAVORITE_1, MenuProvider.MENU_FAVORITE_2 -> {
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
-                    navController.popBackStack()
                     navController.navigate(R.id.favoritesFragment)
                 }
                 MenuProvider.MENU_ABOUT -> {
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
-                    navController.popBackStack()
                     navController.navigate(R.id.aboutFragment)
                 }
                 MenuProvider.MENU_ACCOUNT -> {
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
-                    navController.popBackStack()
                     navController.navigate(R.id.accountsFragment)
                 }
 
