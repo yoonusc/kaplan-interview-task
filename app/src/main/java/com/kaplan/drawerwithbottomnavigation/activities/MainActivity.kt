@@ -62,26 +62,37 @@ class MainActivity : AppCompatActivity() {
     private val mOnItemClickListener: OnItemClickListener = object : OnItemClickListener {
         private fun showItemDescription(menu: Any, itemInfo: ItemInfo) {
             //displaySelectedScreen()
+
             when ((menu as MenuBaseItem).id) {
                 MenuProvider.MENU_HOME -> {
+                    navController.popBackStack()
                     navController.navigate(R.id.homeFragment)
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+
                 }
                 MenuProvider.MENU_FASHION, MenuProvider.MENU_SPORTS, MenuProvider.MENU_ELECTRONICS -> {
+                    navController.popBackStack()
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                     navController.navigate(R.id.categoryFragment)
+
                 }
                 MenuProvider.MENU_FAVORITE_1, MenuProvider.MENU_FAVORITE_2 -> {
+                    navController.popBackStack()
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                     navController.navigate(R.id.favoritesFragment)
+
                 }
                 MenuProvider.MENU_ABOUT -> {
+                    navController.popBackStack()
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                     navController.navigate(R.id.aboutFragment)
+
                 }
                 MenuProvider.MENU_ACCOUNT -> {
+                    navController.popBackStack()
                     binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
                     navController.navigate(R.id.accountsFragment)
+
                 }
 
             }
