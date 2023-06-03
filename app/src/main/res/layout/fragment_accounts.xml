@@ -1,190 +1,196 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/margin_small">
+    android:layout_height="match_parent">
 
-    <!-- Profile Image -->
-    <ImageView
-        android:id="@+id/profile_image"
-        android:layout_width="@dimen/profile_image_width_larg"
-        android:layout_height="@dimen/profile_image_width_larg"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginBottom="@dimen/margin_small"
-        android:scaleType="centerCrop"
-        app:tint="@color/colorPrimary"
-        android:src="@drawable/ic_baseline_account_circle_24"
-        app:layout_constraintBottom_toTopOf="@id/profile_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Profile Name -->
-    <TextView
-        android:id="@+id/profile_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
-        android:text="@string/user_name"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/text_medium"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_image" />
-
-    <!-- Profile Email -->
-    <TextView
-        android:id="@+id/profile_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_tiny"
-        android:text="@string/user_email"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="@dimen/text_small"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_name" />
-
-    <!-- Edit Profile Button -->
-    <Button
-        android:id="@+id/edit_profile_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:text="Edit Profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_email" />
-
-    <!-- Divider -->
-    <View
-        android:id="@+id/divider"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="@dimen/margin_larg"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_profile_button" />
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_small">
 
-    <!-- Orders Section -->
-    <TextView
-        android:id="@+id/tv_general"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_larg"
-        android:text="@string/general"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/text_medium"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider" />
-
-    <!-- Placeholder for Orders List -->
-    <LinearLayout
-        android:id="@+id/ll_general"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
-        android:layout_marginBottom="@dimen/margin_medium"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_general">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/et_height"
-            android:layout_marginTop="@dimen/margin_tiny"
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_image_width_larg"
+            android:layout_height="@dimen/profile_image_width_larg"
+            android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_small"
-            android:background="@drawable/search_bg"
-            android:drawableStart="@drawable/ic_baseline_settings_24"
-            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
-            android:drawablePadding="@dimen/margin_small"
-            android:gravity="center|start"
-            android:padding="@dimen/margin_small"
-            android:text="@string/settings"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintBottom_toTopOf="@id/profile_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary" />
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/user_name"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+        <!-- Profile Email -->
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:text="@string/user_email"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/edit_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Edit Profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_email" />
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_larg"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_button" />
+
+        <!-- Orders Section -->
+        <TextView
+            android:id="@+id/tv_general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larg"
+            android:text="@string/general"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider" />
 
-        <TextView
+        <!-- Placeholder for Orders List -->
+        <LinearLayout
+            android:id="@+id/ll_general"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/et_height"
-            android:layout_marginTop="@dimen/margin_tiny"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:background="@drawable/search_bg"
-            android:drawableStart="@drawable/ic_baseline_settings_24"
-            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
-            android:drawablePadding="@dimen/margin_small"
-            android:gravity="center|start"
-            android:padding="@dimen/margin_small"
-            android:text="@string/my_orders"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/text_medium"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/divider" />
-    </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/tv_general">
 
-    <TextView
-        android:id="@+id/tv_personal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_larg"
-        android:text="@string/personal"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/text_medium"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ll_general" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="center|start"
+                android:padding="@dimen/margin_small"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
 
-    <!-- Placeholder for Orders List -->
-    <LinearLayout
-        android:id="@+id/ll_personal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
-        android:layout_marginBottom="@dimen/margin_medium"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_personal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/et_height"
-            android:layout_marginTop="@dimen/margin_tiny"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:background="@drawable/search_bg"
-            android:drawableStart="@drawable/ic_baseline_settings_24"
-            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
-            android:drawablePadding="@dimen/margin_small"
-            android:gravity="center|start"
-            android:padding="@dimen/margin_small"
-            android:text="@string/privacy_policies"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/text_medium"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/divider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="center|start"
+                android:padding="@dimen/margin_small"
+                android:text="@string/my_orders"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+        </LinearLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/et_height"
-            android:layout_marginTop="@dimen/margin_tiny"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:background="@drawable/search_bg"
-            android:drawableStart="@drawable/ic_baseline_settings_24"
-            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
-            android:drawablePadding="@dimen/margin_small"
-            android:gravity="center|start"
-            android:padding="@dimen/margin_small"
-            android:text="@string/terms_conditions"
+            android:id="@+id/tv_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larg"
+            android:text="@string/personal"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/divider" />
-    </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/ll_general" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Placeholder for Orders List -->
+        <LinearLayout
+            android:id="@+id/ll_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_personal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="center|start"
+                android:padding="@dimen/margin_small"
+                android:text="@string/privacy_policies"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="center|start"
+                android:padding="@dimen/margin_small"
+                android:text="@string/terms_conditions"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
