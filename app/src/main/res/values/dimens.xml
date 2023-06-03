@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="margin_larg">18dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="drawer_width">300dp</dimen>
+    <dimen name="status_bar_height">30dp</dimen>
+    <dimen name="profile_image_width">80dp</dimen>
+    <dimen name="profile_image_width_larg">120dp</dimen>
+    <dimen name="home_item_width">200dp</dimen>
+    <dimen name="et_height">55dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_drawer_menu_width">25dp</dimen>
+    <dimen name="therty_dp">30dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+</resources>

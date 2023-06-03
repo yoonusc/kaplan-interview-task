@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!--In the label field of fragment you can give the name that you want to show in the toolbar-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kaplan.drawerwithbottomnavigation.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_about"
+            app:destination="@id/aboutFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_category"
+            app:destination="@id/categoryFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_favorites"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_to_Home"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="com.kaplan.drawerwithbottomnavigation.fragments.AccountsFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_accounts" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.kaplan.drawerwithbottomnavigation.fragments.AboutFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about" />
+
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.kaplan.drawerwithbottomnavigation.fragments.CategoryFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.kaplan.drawerwithbottomnavigation.fragments.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+</navigation>

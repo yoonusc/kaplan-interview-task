@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaplan.drawerwithbottomnavigation.fragments.SettingsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/fashion" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/electronic" />
+
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/beauty" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/grocery" />
+
+                <!-- Text for Card 1 -->
+
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/home" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/margin_small"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/margin_small">
+
+                <!-- Image for Card 1 -->
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/toys_and_babby" />
+
+                <!-- Text for Card 1 -->
+
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
