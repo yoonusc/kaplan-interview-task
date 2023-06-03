@@ -1,4 +1,4 @@
-package com.kaplan.drawerwithbottomnavigation
+package com.kaplan.drawerwithbottomnavigation.activities
 
 import android.os.Bundle
 import android.view.View
@@ -11,6 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.kaplan.drawerwithbottomnavigation.R
 import com.kaplan.drawerwithbottomnavigation.databinding.ActivityMainBinding
 import com.kaplan.drawerwithbottomnavigation.expandablehelper.MenuBaseItem
 import com.kaplan.drawerwithbottomnavigation.expandablehelper.MenuListAdapter

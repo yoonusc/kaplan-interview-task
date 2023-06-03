@@ -10,5 +10,7 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+    <!--Splash screen theme. You should use it in your manifest file for your Splash Activity-->
+
 
 </resources>
